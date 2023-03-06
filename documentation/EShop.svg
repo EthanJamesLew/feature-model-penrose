@@ -1,0 +1,259 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 110 270 160" width="100%" height="100%" penrose="0"><rect x="0" y="0" width="500" height="400" fill="none" stroke="#000000" stroke-opacity="0.05" stroke-width="1" stroke-linecap="butt" rx="0" transform="rotate(0, 0, 0)"><title>Global.box</title></rect><rect x="145.01883602382247" y="244.72296160172095" width="61.16455078125" height="18" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 145.01883602382247, 244.72296160172095)"><title>`BankTransfer`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 151.01883602382247, 250.72296160172095)" style="font:     9px Palatino;" x="175.60111141444747" y="256.72296160172095" width="49.16455078125" height="6" ascent="6" text-anchor="middle" descent="0" dominant-baseline="alphabetic" alignment-baseline="alphabetic"><title>`BankTransfer`.text</title>BankTransfer</text><g><path d="M 86.51605318592942 182.43852050945563 L 87.08109484961838 235.99511695069802" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>11:0:line</title></g><g><path d="M 86.51605318592942 182.43852050945563 L 22.53404697918424 226.05959506557494" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>11:1:line</title></g><circle fill="#ffffff" fill-opacity="1" cx="86.51605318592942" cy="182.43852050945563" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" r="6"><title>`Security`.xor</title></circle><rect x="65.26971529530442" y="162.43852050945563" width="42.49267578125" height="20" fill="#c8fac8" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 65.26971529530442, 162.43852050945563)"><title>`Security`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 71.26971529530442, 168.43852050945563)" style="font:     9px Palatino;" x="86.51605318592942" y="174.43852050945563" width="30.49267578125" height="8" descent="2" ascent="6" text-anchor="middle" alignment-baseline="alphabetic" dominant-baseline="alphabetic"><title>`Security`.text</title>Security</text><g><path d="M 161.2405634784101 137.96177046301415 L 192.8146674828033 184.05298633344344" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>8:1:line</title></g><g><path d="M 192.8146674828033 204.05298633344344 L 175.60111141444747 244.72296160172095" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>12:0:$ANON_2</title></g><g><path d="M 161.2405634784101 137.96177046301415 L 140.5042333975563 164.74177664461814" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>8:3:line</title></g><circle fill="#000000" fill-opacity="1" cx="192.8146674828033" cy="204.05298633344344" stroke="none" r="6"><title>`Payment`.xor</title></circle><rect x="170.8171088890533" y="184.05298633344344" width="43.9951171875" height="20" fill="#c8fac8" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 170.8171088890533, 184.05298633344344)"><title>`Payment`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 176.8171088890533, 190.05298633344344)" style="font:     9px Palatino;" x="192.8146674828033" y="196.05298633344344" width="31.9951171875" height="8" ascent="6" descent="2" text-anchor="middle" dominant-baseline="alphabetic" alignment-baseline="alphabetic"><title>`Payment`.text</title>Payment</text><rect x="142.9890986346601" y="117.96177046301413" width="36.5029296875" height="20" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 142.9890986346601, 117.96177046301413)"><title>`EShop`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 148.9890986346601, 123.96177046301413)" style="font:     9px Palatino;" x="161.2405634784101" y="129.96177046301415" width="24.5029296875" height="8" descent="2" alignment-baseline="alphabetic" ascent="6" text-anchor="middle" dominant-baseline="alphabetic"><title>`EShop`.text</title>EShop</text><rect x="198.0401226281162" y="147.02340668860367" width="48.4931640625" height="20" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 198.0401226281162, 147.02340668860367)"><title>`Catalogue`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 204.0401226281162, 153.02340668860367)" style="font:     9px Palatino;" x="222.2867046593662" y="159.02340668860367" width="36.4931640625" height="8" ascent="6" text-anchor="middle" dominant-baseline="alphabetic" descent="2" alignment-baseline="alphabetic"><title>`Catalogue`.text</title>Catalogue</text><rect x="209.60150034374396" y="237.047622601356" width="52.490234375" height="18" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 209.60150034374396, 237.047622601356)"><title>`CreditCard`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 215.60150034374396, 243.047622601356)" style="font:     9px Palatino;" x="235.84661753124396" y="249.047622601356" width="40.490234375" height="6" ascent="6" text-anchor="middle" dominant-baseline="alphabetic" descent="0" alignment-baseline="alphabetic"><title>`CreditCard`.text</title>CreditCard</text><g><path d="M 192.8146674828033 204.05298633344344 L 235.84661753124396 237.047622601356" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>12:1:$ANON_2</title></g><rect x="71.83109484961838" y="235.99511695069802" width="30.5" height="20" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 71.83109484961838, 235.99511695069802)"><title>`High`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 77.83109484961838, 241.99511695069802)" style="font:     9px Palatino;" x="87.08109484961838" y="247.99511695069802" width="18.5" height="8" descent="2" ascent="6" text-anchor="middle" dominant-baseline="alphabetic" alignment-baseline="alphabetic"><title>`High`.text</title>High</text><rect x="122.0110693350563" y="164.74177664461814" width="36.986328125" height="18" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 122.0110693350563, 164.74177664461814)"><title>`Search`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 128.0110693350563, 170.74177664461814)" style="font:     9px Palatino;" x="140.5042333975563" y="176.74177664461814" width="24.986328125" height="6" ascent="6" text-anchor="middle" descent="0" dominant-baseline="alphabetic" alignment-baseline="alphabetic"><title>`Search`.text</title>Search</text><g><path d="M 161.2405634784101 137.96177046301415 L 222.2867046593662 147.02340668860367" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>8:0:line</title></g><rect x="0.2879532291842395" y="226.05959506557494" width="44.4921875" height="18" fill="#c8c8fa" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="0.5" stroke-linecap="butt" rx="5" transform="rotate(0, 0.2879532291842395, 226.05959506557494)"><title>`Standard`.box</title></rect><text fill="#000000" fill-opacity="1" stroke="none" transform="rotate(0, 6.2879532291842395, 232.05959506557494)" style="font:     9px Palatino;" x="22.53404697918424" y="238.05959506557494" width="32.4921875" height="6" descent="0" ascent="6" alignment-baseline="alphabetic" text-anchor="middle" dominant-baseline="alphabetic"><title>`Standard`.text</title>Standard</text><g><path d="M 161.2405634784101 137.96177046301415 L 86.51605318592942 162.43852050945563" stroke-opacity="1" stroke-width="1" stroke="#000000" stroke-linecap="butt"></path><title>8:2:line</title></g><circle fill="#000000" fill-opacity="1" cx="86.51605318592942" cy="162.43852050945563" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" r="3"><title>`Security`.opt</title></circle><circle fill="#000000" fill-opacity="1" cx="192.8146674828033" cy="184.05298633344344" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" r="3"><title>`Payment`.opt</title></circle><circle fill="#ffffff" fill-opacity="1" cx="140.5042333975563" cy="164.74177664461814" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" r="3"><title>`Search`.opt</title></circle><circle fill="#000000" fill-opacity="1" cx="222.2867046593662" cy="147.02340668860367" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" r="3"><title>`Catalogue`.opt</title></circle><penrose><version>0.1</version><variation>MazzoneSnail7464</variation><sub>-- top level feature
+Feature EShop
+
+-- special groups
+OrGroup Payment
+XorGroup Security
+
+-- remaining features
+Feature Catalogue, BankTransfer, CreditCard, High, Standard, Search
+
+-- establish relations
+Contains(EShop, Catalogue)
+Contains(EShop, Payment)
+Contains(EShop, Security)
+Contains(EShop, Search)
+
+SomeOf(Payment, BankTransfer)
+SomeOf(Payment, CreditCard)
+
+OneOf(Security, High)
+OneOf(Security, Standard)
+
+Mandatory(Catalogue)
+Mandatory(Payment)
+Mandatory(Security)
+Optional(Search)
+
+-- labeling
+AutoLabel All</sub><sty>Colors {
+   color black = rgba(0.,0.,0.,1.)
+   color red = rgba(1.,0.,0.,1.)
+   color green = rgba(0.,.7,0.,1.)
+   color blue = rgba(0.,0,1.,1.)
+   color white = rgba(1.,1.,1.,1.)
+   color lightGray = rgba(.8,.8,.8,1.)
+   color lightBlue = rgba( 200./255., 200./255., 250./255., 1. )
+   color lightGreen = rgba( 200./255., 250./255., 200./255., 1. )
+}
+
+canvas {
+    width = 500
+    height = 400
+}
+
+Global {
+    -- Define a global box around the canvas
+    shape box = Rectangle {
+        center: (0,0)
+        width: canvas.width
+        height: canvas.height
+        strokeColor: rgba(0.,0.,0.,.05)
+        fillColor: none()
+        strokeWidth: 1
+    }
+
+   -- distance constants
+   scalar outBubbles = 3
+   scalar outFan = 6
+   scalar lineDist = 10.0
+}
+
+forall Feature x {
+    vec2 x.center = (?,?)
+
+    x.text = Text {
+     center: x.center
+     string: x.label
+     fontFamily: "Palatino"
+     fontSize: "9px"
+     fillColor: Colors.black
+    }
+
+    scalar padding = 12
+    x.box = Rectangle {
+      center: x.center
+      width: x.text.width + padding
+      height: x.text.height + padding
+
+      fillColor: Colors.lightBlue
+      strokeColor: Colors.black
+      strokeWidth: .5
+      cornerRadius: 5
+    }
+
+   ensure contains( Global.box, x.box )
+   layer x.text above x.box
+}
+
+forall XorGroup x {
+    override x.box.fillColor = Colors.lightGreen
+}
+
+forall OrGroup x {
+    override x.box.fillColor = Colors.lightGreen
+}
+
+forall Feature f
+where Optional(f){
+    f.opt = Circle{
+        center: (f.center[0], f.center[1] + f.box.height/2.0)
+        r: Global.outBubbles
+        fillColor: Colors.white
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+}
+
+forall Feature f
+where Mandatory(f){
+    f.opt = Circle{
+        center: (f.center[0], f.center[1] + f.box.height/2.0)
+        r: Global.outBubbles
+        fillColor: Colors.black
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+}
+
+forall Feature A; Feature B
+where Contains(A, B) {
+    line = Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    diff = A.center - B.center
+    
+    ensure contains( Global.box, line )
+    encourage above(A.box, B.box)
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage near(A.box, B.box)
+}
+
+forall Feature A; Feature B
+where Requires(A, B) {
+
+   vec2 p = A.center
+   vec2 q = B.center
+   vec2 u = unit(q-p)
+   scalar r = B.box.width /2.0
+
+    line = Line {
+        start: p + r*u
+        end: q - r*u
+        strokeColor: Colors.black
+        strokeWidth: 0.8
+        strokeStyle: "dashed"
+        endArrowhead: "straight"
+        endArrowheadSize: .5
+    }
+    
+    encourage near(A.box, B.box)
+    layer A.box above line
+    layer line above B.box
+}
+
+forall Feature A; Feature B
+where Excludes(A, B) {
+
+   vec2 p = A.center
+   vec2 q = B.center
+   vec2 u = unit(q-p)
+   scalar r = B.box.width 
+
+    line = Line {
+        start: p + r*u
+        end: q - r*u
+        strokeColor: Colors.black
+        strokeWidth: 0.8
+        strokeStyle: "dashed"
+        endArrowhead: "straight"
+        endArrowheadSize: .5
+        startArrowhead: "straight"
+        startArrowheadSize: .5
+    }
+    
+    encourage near(A.box, B.box)
+    layer line above A.box
+    layer line above B.box
+}
+
+forall XorGroup A; Feature B
+where OneOf(A, B) {
+    line = Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+    A.xor = Circle{
+        center: (A.center[0], A.center[1] - A.box.height/2.0)
+        r: Global.outFan
+        fillColor: Colors.white
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    diff = A.center - B.center
+
+    layer A.box above A.xor
+    layer A.xor above line 
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage above(A.box, B.box)
+}
+
+forall OrGroup A; Feature B
+where SomeOf(A, B) {
+    Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    A.xor = Circle{
+        center: (A.center[0], A.center[1] - A.box.height/2.0)
+        r: Global.outFan
+        fillColor: Colors.black
+    }
+
+    diff = A.center - B.center
+
+    layer A.box above A.xor
+    encourage near(A.box, B.box)
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage above(A.box, B.box)
+}
+
+forall Feature A; Feature B
+{
+    encourage notTooClose(A.box, B.box, Global.lineDist)
+}
+
+forall Feature A; Feature B; Feature C
+where Contains(A, B); Contains(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}
+
+forall XorGroup A; Feature B; Feature C
+where OneOf(A, B); OneOf(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}
+
+forall OrGroup A; Feature B; Feature C
+where SomeOf(A, B); SomeOf(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}</sty><dsl>type Feature
+type XorGroup &lt;: Feature
+type OrGroup &lt;: Feature
+
+predicate Contains(Feature f1, Feature f2)
+predicate Requires(Feature f1, Feature f2)
+predicate OneOf(XorGroup f1, Feature f2)
+predicate SomeOf(OrGroup f1, Feature f2)
+predicate Optional(Feature f)
+predicate Mandatory(Feature f)
+predicate Excludes(Feature f1, Feature f2)</dsl></penrose></svg>
