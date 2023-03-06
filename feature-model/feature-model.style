@@ -1,0 +1,223 @@
+-- feature model tree style
+
+Colors {
+   color black = rgba(0.,0.,0.,1.)
+   color red = rgba(1.,0.,0.,1.)
+   color green = rgba(0.,.7,0.,1.)
+   color blue = rgba(0.,0,1.,1.)
+   color white = rgba(1.,1.,1.,1.)
+   color lightGray = rgba(.8,.8,.8,1.)
+   color lightBlue = rgba( 200./255., 200./255., 250./255., 1. )
+   color lightGreen = rgba( 200./255., 250./255., 200./255., 1. )
+}
+
+canvas {
+    width = 500
+    height = 400
+}
+
+Global {
+    -- Define a global box around the canvas
+    shape box = Rectangle {
+        center: (0,0)
+        width: canvas.width
+        height: canvas.height
+        strokeColor: rgba(0.,0.,0.,.05)
+        fillColor: none()
+        strokeWidth: 1
+    }
+
+   -- distance constants
+   scalar outBubbles = 3
+   scalar outFan = 8
+   scalar lineDist = 15.0
+}
+
+forall Feature x {
+    vec2 x.center = (?,?)
+
+    x.text = Text {
+     center: x.center
+     string: x.label
+     fontFamily: "Palatino"
+     fontSize: "12px"
+     fillColor: Colors.black
+    }
+
+    scalar padding = 12
+    x.box = Rectangle {
+      center: x.center
+      width: x.text.width + padding
+      height: x.text.height + padding
+
+      fillColor: Colors.lightBlue
+      strokeColor: Colors.black
+      strokeWidth: .5
+      cornerRadius: 5
+    }
+
+   ensure contains( Global.box, x.box )
+   layer x.text above x.box
+}
+
+forall XorGroup x {
+    override x.box.fillColor = Colors.lightGreen
+}
+
+forall OrGroup x {
+    override x.box.fillColor = Colors.lightGreen
+}
+
+forall Feature f
+where Optional(f){
+    f.opt = Circle{
+        center: (f.center[0], f.center[1] + f.box.height/2.0)
+        r: Global.outBubbles
+        fillColor: Colors.white
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+}
+
+forall Feature f
+where Mandatory(f){
+    f.opt = Circle{
+        center: (f.center[0], f.center[1] + f.box.height/2.0)
+        r: Global.outBubbles
+        fillColor: Colors.black
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+}
+
+forall Feature A; Feature B
+where Contains(A, B) {
+    line = Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    diff = A.center - B.center
+    
+    ensure contains( Global.box, line )
+    encourage above(A.box, B.box)
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage near(A.box, B.box)
+}
+
+forall Feature A; Feature B
+where Requires(A, B) {
+
+   vec2 p = A.center
+   vec2 q = B.center
+   vec2 u = unit(q-p)
+   scalar r = B.box.width /2.0
+
+    line = Line {
+        start: p + r*u
+        end: q - r*u
+        strokeColor: Colors.black
+        strokeWidth: 0.8
+        strokeStyle: "dashed"
+        endArrowhead: "straight"
+        endArrowheadSize: .5
+    }
+    
+    encourage near(A.box, B.box)
+    layer A.box above line
+    layer line above B.box
+}
+
+forall Feature A; Feature B
+where Excludes(A, B) {
+
+   vec2 p = A.center
+   vec2 q = B.center
+   vec2 u = unit(q-p)
+   scalar r = B.box.width 
+
+    line = Line {
+        start: p + r*u
+        end: q - r*u
+        strokeColor: Colors.black
+        strokeWidth: 0.8
+        strokeStyle: "dashed"
+        endArrowhead: "straight"
+        endArrowheadSize: .5
+        startArrowhead: "straight"
+        startArrowheadSize: .5
+    }
+    
+    encourage near(A.box, B.box)
+    layer line above A.box
+    layer line above B.box
+}
+
+forall XorGroup A; Feature B
+where OneOf(A, B) {
+    line = Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+    A.xor = Circle{
+        center: (A.center[0], A.center[1] - A.box.height/2.0)
+        r: Global.outFan
+        fillColor: Colors.white
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    diff = A.center - B.center
+
+    layer A.box above A.xor
+    layer A.xor above line 
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage above(A.box, B.box)
+}
+
+forall OrGroup A; Feature B
+where SomeOf(A, B) {
+    Line {
+        start: (A.box.center[0], A.box.center[1] - A.box.height/2.0) 
+        end: (B.box.center[0], B.box.center[1] + B.box.height/2.0) 
+        strokeColor: Colors.black
+        strokeWidth: 1.0
+    }
+
+    A.xor = Circle{
+        center: (A.center[0], A.center[1] - A.box.height/2.0)
+        r: Global.outFan
+        fillColor: Colors.black
+    }
+
+    diff = A.center - B.center
+
+    layer A.box above A.xor
+    encourage near(A.box, B.box)
+    encourage lessThan(norm(diff), Global.lineDist)
+    encourage above(A.box, B.box)
+}
+
+forall Feature A; Feature B
+{
+    encourage notTooClose(A.box, B.box, Global.lineDist)
+}
+
+forall Feature A; Feature B; Feature C
+where Contains(A, B); Contains(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}
+
+forall XorGroup A; Feature B; Feature C
+where OneOf(A, B); OneOf(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}
+
+forall OrGroup A; Feature B; Feature C
+where SomeOf(A, B); SomeOf(A, C) {
+    encourage equal(C.center[1], B.center[1])
+}

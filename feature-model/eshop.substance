@@ -1,0 +1,26 @@
+-- top level feature
+Feature EShop
+
+-- special groups
+OrGroup Payment
+XorGroup Security
+
+-- remaining features
+Feature Catalogue, BankTransfer, CreditCard, High, Standard, Search
+
+-- establish relations
+Contains(EShop, Catalogue)
+Contains(EShop, Payment)
+Contains(EShop, Security)
+Contains(EShop, Search)
+
+SomeOf(Payment, BankTransfer)
+SomeOf(Payment, CreditCard)
+
+OneOf(Security, High)
+OneOf(Security, Low)
+
+Mandatory(Catalogue)
+Mandatory(Payment)
+Mandatory(Security)
+Optional(Search)

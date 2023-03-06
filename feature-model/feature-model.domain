@@ -1,0 +1,18 @@
+-- we borrow the notation outlined on the wikipedia page
+-- https://en.wikipedia.org/wiki/Feature_model#Feature_modeling_notations
+type Feature
+type XorGroup <: Feature
+type OrGroup <: Feature
+
+-- add to feature hierarchy
+predicate Contains(Feature f1, Feature f2)
+predicate OneOf(XorGroup f1, Feature f2)
+predicate SomeOf(OrGroup f1, Feature f2)
+
+-- label features
+predicate Optional(Feature f)
+predicate Mandatory(Feature f)
+
+-- connections between feature (no hierarchy)
+predicate Requires(Feature f1, Feature f2)
+predicate Excludes(Feature f1, Feature f2)
