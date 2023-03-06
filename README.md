@@ -9,4 +9,4 @@ Visualize [Feature Models](https://en.wikipedia.org/wiki/Feature_model#Feature_m
 * Or – at least one of the sub-features must be selected.
 * Alternative (xor) – exactly one of the sub-features must be selected
 * Requires - if a feature is selected, the required feature must also be selected
-* Exclude - if a feature is selected, the excluded feature cannot be selected
+* Excludes - if a feature is selected, the excluded feature cannot be selected
